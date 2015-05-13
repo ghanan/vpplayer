@@ -27,7 +27,52 @@
 	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:orientation="horizontal"/>
+		android:orientation="horizontal">
+
+		<ProgressBar
+			android:id="@+id/iTiempo"
+			android:layout_height="wrap_content"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_weight="1.0"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"/>
+
+		<ProgressBar
+			android:id="@+id/iVolumen"
+			android:layout_height="wrap_content"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_weight="1.0"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:weightSum="1.0">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="|&lt;"
+			android:layout_weight="0.1"
+			android:width="0dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Large"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_gravity="center"
+			android:layout_weight="0.3"
+			android:width="0dp"/>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:layout_weight="0.6"/>
+
+	</LinearLayout>
 
 	<LinearLayout
 		android:layout_width="match_parent">
@@ -54,7 +99,8 @@
 			android:id="@+id/avanzaMM"
 			android:text="+15m"
 			android:layout_weight="1.0"
-			android:layout_width="match_parent"/>
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
 
 	</LinearLayout>
 
