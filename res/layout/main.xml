@@ -16,11 +16,14 @@
 			android:id="@+id/titulo"
 			android:layout_weight="2"
 			android:layout_height="match_parent"
-			android:background="#FFFFFF"/>
+			android:background="#FFFFFF"
+			android:layout_width="0dp"/>
 
 		<Button
 			android:id="@+id/next"
-			android:text="&gt;|"/>
+			android:text="&gt;|"
+			android:layout_weight=".3"
+			android:layout_width="0dp"/>
 
 	</LinearLayout>
 
@@ -35,15 +38,14 @@
 			style="?android:attr/progressBarStyleHorizontal"
 			android:layout_weight="1.0"
 			android:paddingLeft="10dp"
-			android:paddingRight="10dp"/>
+			android:paddingRight="10dp"
+			android:layout_width="0dp"
+			android:layout_gravity="center"/>
 
-		<ProgressBar
-			android:id="@+id/iVolumen"
+		<SeekBar
 			android:layout_height="wrap_content"
-			style="?android:attr/progressBarStyleHorizontal"
-			android:layout_weight="1.0"
-			android:paddingLeft="10dp"
-			android:paddingRight="10dp"/>
+			android:layout_width="0dp"
+			android:layout_weight="1.0"/>
 
 	</LinearLayout>
 
@@ -63,15 +65,15 @@
 				android:layout_height="wrap_content"
 				android:text="|&lt;"
 				android:layout_width="0dp"
-				android:layout_weight="0.2"/>
+				android:layout_weight="0.3"/>
 
 			<TextView
 				android:layout_height="wrap_content"
 				android:text="0:00/0:00"
-				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:layout_width="0dp"
 				android:layout_gravity="center"
-				android:layout_weight="0.2"
+				android:layout_weight="0.5"
 				android:gravity="center"/>
 
 		</LinearLayout>
