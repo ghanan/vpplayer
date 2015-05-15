@@ -61,19 +61,12 @@
 			android:layout_weight="0.5"
 			android:layout_width="0dp">
 
-			<Button
-				android:layout_height="wrap_content"
-				android:text="|&lt;"
-				android:layout_width="0dp"
-				android:layout_weight="0.3"/>
-
 			<TextView
 				android:layout_height="wrap_content"
-				android:text="0:00/0:00"
+				android:layout_width="match_parent"
+				android:text="0:00:00/0:00:00"
 				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:layout_width="0dp"
 				android:layout_gravity="center"
-				android:layout_weight="0.5"
 				android:gravity="center"/>
 
 		</LinearLayout>
@@ -159,5 +152,16 @@
 
 	</LinearLayout>
 
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="|&lt;"
+			android:layout_width="0dp"
+			android:layout_weight="0.3"/>
+	
 </LinearLayout>
 
