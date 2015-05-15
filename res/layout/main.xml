@@ -17,37 +17,23 @@
 			android:layout_weight="2"
 			android:layout_height="match_parent"
 			android:background="#FFFFFF"
-			android:layout_width="0dp"/>
+			android:layout_width="0dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="4dp"/>
 
 		<Button
-			android:id="@+id/next"
+			android:id="@+id/bNext"
 			android:text="&gt;|"
 			android:layout_weight=".3"
 			android:layout_width="0dp"/>
 
 	</LinearLayout>
 
-	<LinearLayout
+	<SeekBar
+		android:id="@+id/volumen"
 		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:orientation="horizontal">
-
-		<ProgressBar
-			android:id="@+id/iTiempo"
-			android:layout_height="wrap_content"
-			style="?android:attr/progressBarStyleHorizontal"
-			android:layout_weight="1.0"
-			android:paddingLeft="10dp"
-			android:paddingRight="10dp"
-			android:layout_width="0dp"
-			android:layout_gravity="center"/>
-
-		<SeekBar
-			android:layout_height="wrap_content"
-			android:layout_width="0dp"
-			android:layout_weight="1.0"/>
-
-	</LinearLayout>
+		android:layout_width="match_parent"/>
 
 	<LinearLayout
 		android:layout_height="wrap_content"
@@ -57,16 +43,24 @@
 
 		<LinearLayout
 			android:layout_height="wrap_content"
-			android:orientation="horizontal"
+			android:orientation="vertical"
 			android:layout_weight="0.5"
 			android:layout_width="0dp">
 
+			<ProgressBar
+				android:id="@+id/iTiempo"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				style="?android:attr/progressBarStyleHorizontal"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"/>
+
 			<TextView
+				android:id="@+id/tTiempo"				
 				android:layout_height="wrap_content"
 				android:layout_width="match_parent"
 				android:text="0:00:00/0:00:00"
 				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:layout_gravity="center"
 				android:gravity="center"/>
 
 		</LinearLayout>
@@ -78,12 +72,14 @@
 			android:layout_width="2dp">
 
 			<Button
+				android:id="@+id/volbajar"
 				android:layout_height="wrap_content"
 				android:text="V-"
 				android:layout_width="wrap_content"
 				android:layout_weight="1.0"/>
 
 			<Button
+				android:id="@+id/volsubir"
 				android:layout_height="wrap_content"
 				android:text="V+"
 				android:layout_width="wrap_content"
@@ -155,13 +151,30 @@
 	<LinearLayout
 		android:layout_height="wrap_content"
 		android:layout_width="match_parent"
-		android:orientation="horizontal"/>
+		android:orientation="horizontal">
 
 		<Button
+			android:id="@+id/bPrev"
 			android:layout_height="wrap_content"
 			android:text="|&lt;"
 			android:layout_width="0dp"
 			android:layout_weight="0.3"/>
-	
+
+		<Button
+			android:id="@+id/bPausa"
+			android:layout_height="wrap_content"
+			android:text="| |"
+			android:layout_width="0dp"
+			android:layout_weight="0.6"/>
+
+		<Button
+			android:id="@+id/bStop"
+			android:layout_height="wrap_content"
+			android:text="stop"
+			android:layout_width="0dp"
+			android:layout_weight="0.3"/>
+
+	</LinearLayout>
+
 </LinearLayout>
 
