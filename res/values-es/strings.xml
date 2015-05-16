@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">VPPlayer</string>
-    <string name="abrir">open</string>
-	
+    <string name="abrir">abrir</string>
+
 </resources>
 
