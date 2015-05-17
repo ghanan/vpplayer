@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="preferencias_principal" >
+	<PreferenceScreen android:title="@string/minutos" >
+		<CheckBoxPreference
+			android:key="recibircorreos"
+			android:title="Recibir correos"
+			android:summary="Indicar si se quiere recibir correo"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="@string/segundos" >
+		<CheckBoxPreference
+			android:key="recibircorreos"
+			android:title="Recibir correos"
+			android:summary="Indicar si se quiere recibir correo"/>
+	</PreferenceScreen>
+	<PreferenceScreen android:title="@string/ajustes" >
+		<CheckBoxPreference
+			android:key="recibircorreos"
+			android:title="Recibir correos"
+			android:summary="Indicar si se quiere recibir correo"/>
+	</PreferenceScreen>
+	
+</PreferenceScreen>

@@ -3,6 +3,9 @@
 
     <string name="app_name">VPPlayer</string>
     <string name="abrir">open</string>
+	<string name="minutos">MINUTES</string>
+	<string name="segundos">SECONDS</string>
+	<string name="ajustes">SETTINGS</string>
 	
 </resources>
 
